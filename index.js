@@ -1,14 +1,12 @@
-const express = require("express");
-const app = express();
+const generateButton = document.getElementById('generateButton');
+const randomNumberDisplay = document.getElementById('randomNumberDisplay');
 
-app.use(express.static(__dirname + '/client'))
+function generateRandomNumber() {
 
-const port = process.env.PORT || 3000
-app.get('/test', function(request, response) {
-	response.type('text/plain')
-	response.send('Node.js and Express running on port='+port)
-})
+    const randomNum = Math.floor(Math.random() * 6) + 1;
 
-app.listen(port, function() {
-	console.log("Server is running at http://localhost:3000/")
-})
+
+    randomNumberDisplay.textContent = `You Got a: ${randomNum}`;
+}
+
+generateButton.addEventListener('click', generateRandomNumber);

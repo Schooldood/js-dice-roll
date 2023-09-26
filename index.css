@@ -1,0 +1,50 @@
+.center{
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to right, navy, green);
+}
+
+hr {
+    width: 100%;
+    height: 23px;
+    background-image: linear-gradient(to left, navy, green);
+    margin: 0;
+}
+
+.btn_center {
+    text-align: center;
+}
+
+.center_head {
+    background-image: linear-gradient(to right, green, navy, green);
+    color: white;
+    text-align: center;
+}
+
+.header {
+    background-image: linear-gradient(to right, navy, green);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Button*/
+#generateButton {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 22px;
+    background-image: linear-gradient(to right, navy, green);
+}
+
+#generateButton:hover {
+    background-image: linear-gradient(to left, navy, green); 
+}
+
+/*Number you got and words by it*/
+#randomNumberDisplay {
+    font-size: 24px;
+}
+
+
